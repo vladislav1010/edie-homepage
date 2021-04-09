@@ -27,6 +27,8 @@
   // This matches the problem, and behavior code is simple and straightforward.
   --text-darkm-default: var(--gray-6);
 
+  --text-placeholder: var(--gray-4);
+
   // Colors of the logo on dark and light backgrounds aren't ruled by categorization above.
   // Domain logic of specific colors for logo doesn't duplicated.
   // According to DAMP principle, the what-to's of the logo will describe it using specific steps: color, font-size, etc.
