@@ -25,7 +25,7 @@ body {
   line-height: var(--leading-normal);
 }
 
-// Taken from awesome framework https://github.com/tailwindlabs/tailwindcss, with small changes
+/* Taken from awesome framework https://github.com/tailwindlabs/tailwindcss, with small changes */
 
 /**
  * Removes the default spacing and border for appropriate elements.

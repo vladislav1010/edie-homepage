@@ -1,0 +1,63 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border-width: var(--border-1);
+  font-weight: var(--font-weight-medium);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn:hover:disabled {
+  background: initial;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: var(--box-shadow-ring);
+}
+
+/* Sizes */
+/* Separation of concerns. .btn and .btn_md each has 1 axis of change */
+.btn_md {
+  font-size: var(--text-base);
+  vertical-align: middle;
+  border-radius: var(--rounded-xl);
+  height: 42px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Color schemes */
+.btn_primary.btn_solid {
+  --edie-ring-color: var(--primary-500-50a);
+  --bg: var(--primary-500);
+  --color: var(--white);
+  --hover-bg: var(--primary-600);
+  --active-bg: var(--primary-700);
+}
+
+/* Variants */
+.btn_solid {
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--bg);
+}
+
+.btn_solid:hover:disabled {
+  background-color: var(--bg);
+  border-color: var(--bg);
+}
+
+.btn_solid:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--hover-bg);
+}
+
+.btn_solid:active {
+  background-color: var(--active-bg);
+  border-color: var(--active-bg);
+}
