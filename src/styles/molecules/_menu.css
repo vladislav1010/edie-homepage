@@ -1,0 +1,55 @@
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    flex: 0 0 auto;
+
+    --link-px: 7px;
+}
+
+.menu__link {
+    padding: var(--link-px);
+
+    font-size: var(--text-lg);
+    /* By being explicit, we get a bit more maintainable code */
+    line-height: var(--leading-normal);
+    font-weight: var(--font-weight-medium);
+    /* Inherit from body */
+    /* font-family: var(--font-sans-serif);*/
+
+    display: flex;
+}
+
+.menu__link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+    .menu {
+        flex-direction: column;
+
+        margin-left: var(--section-1-pl);
+        margin-right: var(--section-1-pr);
+    }
+
+    .menu__item {
+        margin-left: calc(0px - var(--link-px));
+        margin-right: calc(0px - var(--link-px));
+    }
+}
+
+@media (min-width: 576px) {
+    .menu {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-right: 36px;
+    }
+
+    .menu__link {
+        font-size: var(--text-xl);
+    }
+}

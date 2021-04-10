@@ -1,0 +1,11 @@
+:root {
+    --section-1-pl: calc(10 / 16 * 1rem);
+    --section-1-pr: calc(17 / 16 * 1rem);
+}
+
+@media (min-width: 576px) {
+    :root {
+        --section-1-pl: calc(52 / 16 * 1rem);
+        --section-1-pr: calc(56 / 16 * 1rem);
+    }
+}

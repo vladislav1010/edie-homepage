@@ -63,6 +63,16 @@ $ npm start
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [CSS Utility Classes and "Separation of Concerns"](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+- [The youtube channel of Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw)
+- [A Complete Guide to Links and Buttons](https://css-tricks.com/a-complete-guide-to-links-and-buttons/)
+- [Refactoring: Improving the Design of Existing Code (2nd Edition)](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/ref=pd_lpo_14_t_0/131-9241214-4594852?_encoding=UTF8&pd_rd_i=0134757599&pd_rd_r=e49a5fae-7d57-4003-a6a8-421ec33090ad&pd_rd_w=yxLrx&pd_rd_wg=TCZMC&pf_rd_p=337be819-13af-4fb9-8b3e-a5291c097ebb&pf_rd_r=YJWMR6E3W96TDQYPSSPF&psc=1&refRID=YJWMR6E3W96TDQYPSSPF)
+- [TailwindCSS. Utility-First](https://tailwindcss.com/docs/utility-first)
+- [OCP vs YAGNI](https://enterprisecraftsmanship.com/posts/ocp-vs-yagni)
+- [DRY vs DAMP in Unit Tests](https://enterprisecraftsmanship.com/posts/dry-damp-unit-tests/)
+- [An Interactive Guide to CSS Transitions](https://www.joshwcomeau.com/animation/css-transitions/)
+- [Optimize JavaScript Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
+- [Atomic Design by Brad Frost](https://atomicdesign.bradfrost.com/)
+- [TailwindCSS. Screen Readers](https://tailwindcss.com/docs/screen-readers#class-reference)
 
 ## Contact
 

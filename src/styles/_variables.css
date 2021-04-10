@@ -5,6 +5,26 @@
   --gray-3: #828282;
   --gray-4: #bdbdbd;
   --gray-6: #f2f2f2;
+  --black: #000000;
+  /* On one hand, there is reason to use this variable throughout my codebase, instead of, say, `--bg`.
+   I shouldn’t develop the functionality of dark theme, nor should I modify your existing code to account for its appearance in the future.
+   It is preferable to have less code, not more as any additional code adds up to the maintenance cost.
+   Introducing code “just in case”, without the immediate need, increases the total cost of ownership for the entire code base.
+   In this case there may be need to refactor that additional piece. It'd also slightly harder to understand how the code works.
+   On the other hand, I'm designing functionality, that is hard to change in the future. It’s worth taking some time to try and predict how the future functionality will play with the decisions I make now.
+
+   For example, if in the template in Figma font colors in footer had corresponded
+   to font colors of analogous elements on white background, aka light and dark mode,
+   I would have thought in that manner and implemented light and dark mode.
+
+   If future changes of colors contradicted with my abstractions,
+   I would need to refactor color abstractions and their usages in many places.
+
+   Moreover, even if site had dark mode feature, activity on setting up color modes would be wasteful,
+   as the view of product owner will most likely evolve, and I will still have to make adjustments to it.
+   On the other hand, what would be if I decided to not create hasty abstractions?
+   I would also get many sweeping changes, but as my design adhered to KISS, it would be much easier to make them.
+  */
   --white: #ffffff;
   --blue-500: #2d9cdb;
   --blue-600: #2185c0;
@@ -12,7 +32,7 @@
   /*noinspection CssInvalidFunction*/
   --blue-500-50a: color(#2d9cdb a(50%));
 
-  /* Font familiees */
+  /* Font families */
   --font-sans-serif: Poppins;
   /* If purpose of these variables in program changes, I'll rename variables to explain what I'm up to. */
   --font-logo: Heebo;
@@ -24,25 +44,40 @@
   /* Another font weights are related only to logo and copyright, so I consider them on-off values. */
 
   /* Font sizes */
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.5rem; /* 24px */
+  --text-2xl: 2.25rem; /* 36px */
+  --text-3xl: 3rem; /* 48px */
 
   /* Color naming abstraction */
+  /* General */
   --primary-500: var(--blue-500);
   --primary-600: var(--blue-600);
   --primary-700: var(--blue-700);
   --primary-500-50a: var(--blue-500-50a);
 
+  --dominant-1: var(--gray-1);
+  --dominant-2: var(--gray-2);
+  --dominant-3: var(--gray-3);
+  --dominant-4: var(--gray-4);
+  --dominant-6: var(--gray-6);
+
+  --bg: var(--white);
+  --surface: var(--white);
+
+  /* Text color naming abstractions */
   /* Any future modifications to the repeating code can be done in one place and used by all the callers.
   Should the code vary in the future, I can easily move it (or some of it) out again */
-  --text-title: var(--gray-1);
-  --text-body: var(--gray-2);
-  --text-caption: var(--gray-3);
+  --text-title: var(--dominant-1);
+  --text-body: var(--dominant-2);
+  --text-caption: var(--dominant-3);
 
   /* This matches the problem, and behavior code is simple and straightforward. */
-  --text-darkm-default: var(--gray-6);
+  --text-darkm-default: var(--dominant-6);
 
-  --text-placeholder: var(--gray-4);
+  --text-placeholder: var(--dominant-4);
 
   /* Colors of the logo on dark and light backgrounds aren't ruled by categorization above.
   Domain logic of specific colors for logo doesn't duplicated.
@@ -67,6 +102,13 @@
   --box-shadow-ring: var(--edie-ring-inset) 0 0 0
     calc(var(--edie-ring-width) + var(--edie-ring-offset-width))
     var(--edie-ring-color);
+
+  /* Spacing */
+  --space-2: 0.4375rem;
+
+  --space--2: -0.4375rem;
+  /* TODO: Consider values for spacing scale */
+  /* 7 10 15 22 31 40 44 48 */
 }
 
 * {

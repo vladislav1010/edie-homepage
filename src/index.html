@@ -17,10 +17,34 @@
       href="../node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./index.js"></script>
     <title>Edie homepage</title>
   </head>
   <body>
-    <include src="src/html/header.html"></include>
-    <button class="btn btn_md btn_solid btn_primary">Test</button>
+  <header class="header dropdown" id="header">
+    <!-- The indirection is lower when having classes inline, but since I dynamically set line-height and vertical-align, I keep all declarations in CSS -->
+    <a href="/" class="logo">
+      Edie
+    </a>
+      <button class="btn btn_link btn_black hover:no-underline p-2 -mr-2 header__btn-menu" data-action="toggle" data-target="#header" data-hide-target="#main-menu-dropdown" data-leave-transition-time="75">
+        <span class="menu-icon">
+          <span class="menu-icon__bar"></span>
+          <span class="menu-icon__bar"></span>
+          <span class="menu-icon__bar"></span>
+        </span>
+      </button>
+      <div class="dropdown__body header__menu" id="main-menu-dropdown" role="menu" aria-orientation="vertical" aria-labelledby="main-menu-title">
+        <nav>
+          <h2 class="sr-only" id="main-menu-title">Menu</h2>
+          <ul class="menu">
+            <!-- TODO: hrefs -->
+            <li class="menu__item"><a href="#" class="menu__link btn btn_link btn_dominant-1">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link btn btn_link btn_dominant-1">Services</a></li>
+            <li class="menu__item"><a href="#" class="menu__link btn btn_link btn_dominant-1">Our Work</a></li>
+            <li class="menu__item"><a href="#" class="menu__link btn btn_link btn_dominant-1">Clients</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
   </body>
 </html>

@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "postcss-import": {},
+    "postcss-url": {},
+    "postcss-cssnext": {
+      "features": {
+        "customProperties": false
+      }
+    }
+  }
+}

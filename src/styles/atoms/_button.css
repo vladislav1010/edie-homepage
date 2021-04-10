@@ -3,6 +3,7 @@
   align-items: center;
   border-width: var(--border-1);
   font-weight: var(--font-weight-medium);
+  transition: all 0.15s ease-out;
 }
 
 .btn:disabled {
@@ -34,30 +35,76 @@
 /* Color schemes */
 .btn_primary.btn_solid {
   --edie-ring-color: var(--primary-500-50a);
-  --bg: var(--primary-500);
-  --color: var(--white);
-  --hover-bg: var(--primary-600);
-  --active-bg: var(--primary-700);
+  --btn-bg: var(--primary-500);
+  --btn-color: var(--white);
+  --btn-hover-bg: var(--primary-600);
+  --btn-active-bg: var(--primary-700);
+}
+
+.btn_link.btn_black {
+  --btn-color: var(--black);
+  --btn-hover-color: var(--gray-1);
+  --btn-active-color: var(--gray-2);
+}
+
+.btn_link.btn_dominant-1 {
+  --btn-color: var(--dominant-1);
+  --btn-hover-color: var(--dominant-2);
+  --btn-active-color: var(--dominant-3);
 }
 
 /* Variants */
+/* Solid */
 .btn_solid {
-  background-color: var(--bg);
-  color: var(--color);
-  border-color: var(--bg);
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border-color: var(--btn-bg);
 }
 
 .btn_solid:hover:disabled {
-  background-color: var(--bg);
-  border-color: var(--bg);
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
 }
 
 .btn_solid:hover {
-  background-color: var(--hover-bg);
-  border-color: var(--hover-bg);
+  background-color: var(--btn-hover-bg);
+  border-color: var(--btn-hover-bg);
 }
 
 .btn_solid:active {
-  background-color: var(--active-bg);
-  border-color: var(--active-bg);
+  background-color: var(--btn-active-bg);
+  border-color: var(--btn-active-bg);
+}
+
+/* Link */
+.btn_link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #0000;
+  border-width: 0;
+  padding: 0;
+  height: auto;
+  vertical-align: baseline;
+  line-height: normal;
+
+  color: var(--btn-color);
+}
+
+.btn_link:hover {
+  color: var(--btn-hover-color);
+  text-decoration: underline;
+}
+
+.btn_link:hover:disabled {
+  text-decoration: none;
+}
+
+.btn_link:active {
+  color: var(--btn-active-color);
+}
+
+.btn_link:focus {
+  box-shadow: none;
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }

@@ -1,0 +1,17 @@
+.menu-icon {
+    display: block;
+    width: 18px;
+    color: inherit;
+}
+
+.menu-icon__bar {
+    color: inherit;
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 999px;
+}
+
+.menu-icon__bar:not(:first-child) {
+    margin-top: 3px;
+}

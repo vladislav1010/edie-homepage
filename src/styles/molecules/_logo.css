@@ -1,0 +1,23 @@
+.logo {
+    font-family: var(--font-logo);
+    color: var(--dominant-1);
+    font-weight: 800;
+    font-size: var(--text-xl);
+    line-height: var(--leading-normal);
+    font-style: normal;
+    text-decoration: none;
+    vertical-align: middle;
+    /* TODO: align exactly in the middle of line-box by the symbol `d` */
+}
+
+@media (min-width: 576px) {
+    .logo {
+        font-size: var(--text-2xl);
+        line-height: var(--leading-normal);
+    }
+}
+
+.logo:hover, .logo:active {
+    text-decoration: none;
+    color: var(--dominant-1);
+}
