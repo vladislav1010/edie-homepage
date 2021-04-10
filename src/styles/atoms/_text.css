@@ -1,0 +1,11 @@
+.h {
+    line-height: 1.5;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-sans-serif);
+}
+
+.body {
+    line-height: 1.5;
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-sans-serif);
+}

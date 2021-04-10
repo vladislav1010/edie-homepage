@@ -73,6 +73,7 @@ $ npm start
 - [Optimize JavaScript Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
 - [Atomic Design by Brad Frost](https://atomicdesign.bradfrost.com/)
 - [TailwindCSS. Screen Readers](https://tailwindcss.com/docs/screen-readers#class-reference)
+- [Subatomic Design Systems](https://daneden.me/blog/2018/subatomic-design-systems)
 
 ## Contact
 
