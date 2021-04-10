@@ -3,7 +3,9 @@
   align-items: center;
   border-width: var(--border-1);
   font-weight: var(--font-weight-medium);
-  transition: all 0.15s ease-out;
+  /* We specify exact properties instead of `all`, because with all we can inadvertently enable undesired transition,
+  which can be very easy left unnoticed */
+  transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 
 .btn:disabled {
@@ -51,6 +53,12 @@
   --btn-color: var(--dominant-1);
   --btn-hover-color: var(--dominant-2);
   --btn-active-color: var(--dominant-3);
+}
+
+.btn_link.btn_primary {
+  --btn-color: var(--primary-500);
+  --btn-hover-color: var(--primary-600);
+  --btn-active-color: var(--primary-700);
 }
 
 /* Variants */

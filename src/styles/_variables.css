@@ -44,6 +44,7 @@
   /* Another font weights are related only to logo and copyright, so I consider them on-off values. */
 
   /* Font sizes */
+  --text-xs: 0.75rem; /* 12px */
   --text-sm: 0.875rem; /* 14px */
   --text-base: 1rem; /* 16px */
   --text-lg: 1.125rem; /* 18px */
@@ -104,11 +105,13 @@
     var(--edie-ring-color);
 
   /* Spacing */
-  --space-2: 0.4375rem;
+  --space-2: 0.4375rem; /* 7px */
+  --space-4: 1rem; /* 16px */
 
   --space--2: -0.4375rem;
+  --space--4: -1rem;
   /* TODO: Consider values for spacing scale */
-  /* 7 10 15 22 31 40 44 48 */
+  /* 7 10 15 16 22 31 40 42 44 48 */
 }
 
 * {

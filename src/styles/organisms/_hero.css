@@ -1,0 +1,67 @@
+.hero {
+    padding: calc(48 / 16  * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
+}
+
+@media (min-width: 576px) {
+    .hero {
+        padding: calc(89 / 16  * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
+    }
+}
+
+.hero__intro {
+    margin-left: 40px;
+}
+
+.hero__title {
+    font-size: var(--text-xl);
+    line-height: 1.5;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-sans-serif);
+    color: var(--dominant-1);
+
+    margin-bottom: 15px;
+}
+
+.hero__sub-title {
+    font-size: var(--text-xs);
+
+    margin-bottom: 0;
+}
+
+.hero__image {
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .hero__intro {
+        margin-left: calc(225 / 1332 * 100%);
+    }
+
+    .hero__title {
+        font-size: var(--text-3xl);
+
+        margin-bottom: 42px;
+    }
+
+    .hero__sub-title {
+        font-size: var(--text-lg);
+        line-height: 1.5;
+        font-weight: var(--font-weight-medium);
+        font-family: var(--font-sans-serif);
+
+        /* If we had left mb-4 in HTML, it would have been violation of separation of concerns */
+        margin-bottom: var(--space-4);
+    }
+
+    .hero__image {
+        border-radius: 18px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1199px) {
+    .hero__intro {
+        max-width: 50%;
+    }
+}
