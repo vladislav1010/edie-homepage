@@ -75,6 +75,7 @@ $ npm start
 - [TailwindCSS. Screen Readers](https://tailwindcss.com/docs/screen-readers#class-reference)
 - [Subatomic Design Systems](https://daneden.me/blog/2018/subatomic-design-systems)
 - [HTML attribute: readonly](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly)
+- [Moving the mouse: mouseover/out, mouseenter/leave](https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave)
 
 ## Contact
 

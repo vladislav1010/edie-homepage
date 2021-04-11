@@ -45,6 +45,7 @@
   /* Font weights */
   --font-weight-normal: 400;
   --font-weight-medium: 500;
+  --font-weight-extra-bold: 700;
   /* Another font weights are related only to logo and copyright, so I consider them on-off values. */
 
   /* Font sizes */

@@ -141,4 +141,71 @@ document.addEventListener("DOMContentLoaded", () => {
   adjustSubscribeInputPadding();
   window.addEventListener("load", adjustSubscribeInputPadding);
   window.addEventListener("resize", adjustSubscribeInputPadding);
+
+  // Switch button color scheme on service card :hover
+  let currentEl = null;
+  const servicesEl = document.getElementsByClassName("services")[0];
+  servicesEl.addEventListener("mouseover", (event) => {
+    if (currentEl) {
+      return;
+    }
+
+    let target = event.target.closest(".services__item");
+
+    if (!target) {
+      return;
+    }
+
+    if (!servicesEl.contains(target)) {
+      return;
+    }
+
+    currentEl = target;
+    onServiceEnter(currentEl);
+  });
+
+  servicesEl.addEventListener("mouseout", (event) => {
+    if (!currentEl) {
+      return;
+    }
+
+    let relatedTarget = event.relatedTarget;
+
+    while (relatedTarget) {
+      if (relatedTarget === currentEl) {
+        return;
+      }
+
+      relatedTarget = relatedTarget.parentNode;
+    }
+
+    onServiceLeave(currentEl);
+    currentEl = null;
+  });
+
+  function serviceButton(el) {
+    return el.querySelector(".service__btn");
+  }
+
+  function onServiceEnter(el) {
+    const button = serviceButton(el);
+
+    if (!button) {
+      return;
+    }
+
+    button.classList.remove("btn_dominant");
+    button.classList.add("btn_primary");
+  }
+
+  function onServiceLeave(el) {
+    const button = serviceButton(el);
+
+    if (!button) {
+      return;
+    }
+
+    button.classList.add("btn_dominant");
+    button.classList.remove("btn_primary");
+  }
 });

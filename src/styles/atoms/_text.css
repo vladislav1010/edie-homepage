@@ -25,6 +25,17 @@
   }
 }
 
+.h_3 {
+  --h-font-size: var(--text-xl);
+  font-weight: var(--font-weight-extra-bold);
+}
+
+@media (min-width: 576px) {
+  .h_3 {
+    --h-font-size: var(--text-xl);
+  }
+}
+
 .body {
   line-height: var(--leading-normal);
   font-weight: var(--font-weight-normal);

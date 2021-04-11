@@ -48,6 +48,14 @@
   --btn-active-bg: var(--primary-700);
 }
 
+.btn_solid.btn_dominant {
+  --edie-ring-color: var(--primary-500-50a);
+  --btn-bg: #e0e0e0;
+  --btn-color: #828282;
+  --btn-hover-color: var(--gray-4);
+  --btn-active-color: var(--gray-4);
+}
+
 .btn_link.btn_black {
   --btn-color: var(--black);
   --btn-hover-color: var(--gray-1);

@@ -30,6 +30,20 @@
   display: none;
 }
 
+@media (min-width: 576px) {
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:flex-1 {
+    flex: 1 1 0;
+  }
+}
+
 /* Copied from TailwindCSS */
 .sr-only {
   position: absolute;
