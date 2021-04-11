@@ -2,6 +2,27 @@
   line-height: var(--leading-normal);
   font-weight: var(--font-weight-medium);
   font-family: var(--font-sans-serif);
+  font-size: var(--h-font-size);
+}
+
+.h_1 {
+  --h-font-size: var(--text-xl);
+}
+
+@media (min-width: 576px) {
+  .h_1 {
+    --h-font-size: var(--text-3xl);
+  }
+}
+
+.h_2 {
+  --h-font-size: var(--text-xl);
+}
+
+@media (min-width: 576px) {
+  .h_2 {
+    --h-font-size: var(--text-2xl);
+  }
 }
 
 .body {

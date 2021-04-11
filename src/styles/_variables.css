@@ -121,7 +121,7 @@
   --space--2: -0.4375rem;
   --space--4: -1rem;
   /* TODO: Consider values for spacing scale */
-  /* 7 9 10 15 16 22 31 40 42 44 48 */
+  /* 7 9 10 15 16 22 31 40 42 44 48 100 200 */
 
   /* z-index */
   --z-dropdown: 1000;

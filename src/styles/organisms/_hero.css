@@ -1,10 +1,10 @@
 .hero {
-  padding: calc(48 / 16 * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
+  padding: calc(48 / 16 * 1rem) var(--section-1-pr) 100px var(--section-1-pl);
 }
 
 @media (min-width: 576px) {
   .hero {
-    padding: calc(89 / 16 * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
+    padding: calc(89 / 16 * 1rem) var(--section-1-pr) 200px var(--section-1-pl);
   }
 }
 
@@ -13,7 +13,6 @@
 }
 
 .hero__title {
-  font-size: var(--text-xl);
   color: var(--text-title);
 }
 
@@ -46,10 +45,6 @@
 @media (min-width: 576px) {
   .hero__intro {
     margin-left: calc(225 / 1332 * 100%);
-  }
-
-  .hero__title {
-    font-size: var(--text-3xl);
   }
 
   .hero__body {
