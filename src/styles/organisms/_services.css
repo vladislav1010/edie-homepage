@@ -1,11 +1,6 @@
 .services {
-  padding: 0 calc(19 / 16 * 1rem) calc(100 / 16 * 1rem) calc(15 / 16 * 1rem);
-}
-
-@media (min-width: 576px) {
-  .services {
-    padding: 0 calc(165 / 16 * 1rem) calc(194 / 16 * 1rem);
-  }
+  padding: var(--section-py) var(--section-2-pr) var(--section-py)
+    var(--section-2-pl);
 }
 
 .services__title {

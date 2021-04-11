@@ -1,11 +1,21 @@
 :root {
   --section-1-pl: calc(10 / 16 * 1rem);
   --section-1-pr: calc(17 / 16 * 1rem);
+
+  --section-2-pl: calc(15 / 16 * 1rem);
+  --section-2-pr: calc(19 / 16 * 1rem);
+
+  --section-py: calc(50 / 16 * 1rem);
 }
 
 @media (min-width: 576px) {
   :root {
     --section-1-pl: calc(52 / 16 * 1rem);
     --section-1-pr: calc(56 / 16 * 1rem);
+
+    --section-2-pl: calc(165 / 16 * 1rem);
+    --section-2-pr: calc(165 / 16 * 1rem);
+
+    --section-py: calc(100 / 16 * 1rem);
   }
 }
