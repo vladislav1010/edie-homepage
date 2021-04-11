@@ -32,6 +32,10 @@
   /*noinspection CssInvalidFunction*/
   --blue-500-50a: color(#2d9cdb a(50%));
 
+  --red-500: #EB5757;
+  --red-600: #E73636;
+  --red-700: #DB1A1A;
+
   /* Font families */
   --font-sans-serif: Poppins;
   /* If purpose of these variables in program changes, I'll rename variables to explain what I'm up to. */
@@ -44,6 +48,7 @@
   /* Another font weights are related only to logo and copyright, so I consider them on-off values. */
 
   /* Font sizes */
+  --text-xxs: 0.625rem; /* 10px */
   --text-xs: 0.75rem; /* 12px */
   --text-sm: 0.875rem; /* 14px */
   --text-base: 1rem; /* 16px */
@@ -58,6 +63,10 @@
   --primary-600: var(--blue-600);
   --primary-700: var(--blue-700);
   --primary-500-50a: var(--blue-500-50a);
+
+  --invalid-500: var(--red-500);
+  --invalid-600: var(--red-600);
+  --invalid-700: var(--red-700);
 
   --dominant-1: var(--gray-1);
   --dominant-2: var(--gray-2);
@@ -92,6 +101,7 @@
 
   /* Border widths */
   --border-1: 1px;
+  --border-2: 2px;
 
   /* Border radius */
   --rounded-xl: 0.75rem;
@@ -111,7 +121,10 @@
   --space--2: -0.4375rem;
   --space--4: -1rem;
   /* TODO: Consider values for spacing scale */
-  /* 7 10 15 16 22 31 40 42 44 48 */
+  /* 7 9 10 15 16 22 31 40 42 44 48 */
+
+  /* z-index */
+  --z-dropdown: 1000;
 }
 
 * {

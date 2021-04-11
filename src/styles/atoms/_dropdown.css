@@ -4,6 +4,7 @@
 
 .dropdown__body {
     position: absolute;
+    z-index: var(--z-dropdown);
     will-change: transform;
 }
 

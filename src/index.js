@@ -114,4 +114,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   })
+
+  // Subscribe button measuring width for input's padding
+  const subscribeButton = document.getElementById('subscribe-button');
+  const subscribeInput = document.getElementById('subscribe-email');
+
+  function adjustSubscribeInputPadding() {
+    const buttonWidth = subscribeButton.getBoundingClientRect().width + 'px';
+
+    subscribeInput.style.setProperty('--subscribe-button-width', buttonWidth)
+  }
+
+  adjustSubscribeInputPadding();
+  window.addEventListener('load', adjustSubscribeInputPadding)
+  window.addEventListener('resize', adjustSubscribeInputPadding)
 });

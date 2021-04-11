@@ -27,11 +27,15 @@
 /* Separation of concerns. .btn and .btn_md each has 1 axis of change */
 .btn_md {
   font-size: var(--text-base);
+  line-height: var(--leading-normal);
+
   vertical-align: middle;
+
   border-radius: var(--rounded-xl);
-  height: 42px;
-  padding-left: 12px;
-  padding-right: 12px;
+
+  height: calc(42 / 16 * 1rem);
+  padding-left: calc(12 / 16 * 1rem);
+  padding-right: calc(12 / 16 * 1rem);
 }
 
 /* Color schemes */

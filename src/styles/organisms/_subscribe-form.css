@@ -1,0 +1,69 @@
+.subscribe-form {
+    --subscribe-button-margin-right: calc(4 / 16 * 1rem);
+}
+
+.subscribe-form__label {
+    font-size: var(--text-xxs);
+
+    display: inline-block;
+
+    margin-bottom: 0;
+}
+
+.subscribe-form_on_light .subscribe-form__label {
+    color: var(--dominant-3);
+}
+
+.subscribe-form_on_dark .subscribe-form__label {
+    color: var(--dominant-6);
+}
+
+.subscribe-form__button {
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-sans-serif);
+    line-height: var(--leading-normal);
+    --btn-color: var(--dominant-6) !important;
+
+    border-radius: calc(12 / 16 * 1rem);
+
+    height: calc(39 / 16 * 1rem);
+    padding-left: calc(27 / 16 * 1rem);
+    padding-right: calc(27 / 16 * 1rem);
+
+    margin-right: var(--subscribe-button-margin-right);
+}
+
+.subscribe-form__button, .subscribe-form__input {
+    font-size: var(--text-lg);
+}
+
+.subscribe-form__input {
+    /* --subscribe-button-width is set from JS */
+    /*noinspection CssUnresolvedCustomProperty*/
+    padding-right: calc(var(--input-padding-x) + var(--subscribe-button-margin-right) + var(--subscribe-button-width));
+
+    --input-padding-x: calc(19 / 16 * 1rem);
+    --input-padding-y: calc(13 / 16 * 1rem);
+    font-size: var(--text-sm);
+}
+
+@media (min-width: 576px) {
+    .subscribe-form__label {
+        font-size: var(--text-sm);
+
+        margin-bottom: calc(9 / 16 * 1rem);
+    }
+
+    .subscribe-form__button {
+        height: calc(49 / 16 * 1rem);
+    }
+
+    .subscribe-form__button, .subscribe-form__input {
+        font-size: var(--text-lg);
+    }
+
+    .subscribe-form__input {
+        --input-padding-x: calc(21 / 16 * 1rem);
+        --input-padding-y: calc(15 / 16 * 1rem);
+    }
+}
