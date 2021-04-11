@@ -1,44 +1,44 @@
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .hover\:no-underline:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .active\:no-underline:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .text-black {
-    color: var(--black);
+  color: var(--black);
 }
 
 .p-2 {
-    padding: var(--space-2);
+  padding: var(--space-2);
 }
 
 .-mr-2 {
-    margin-right: var(--space--2);
+  margin-right: var(--space--2);
 }
 
 .mb-4 {
-    margin-bottom: var(--space-4);
+  margin-bottom: var(--space-4);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* Copied from TailwindCSS */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

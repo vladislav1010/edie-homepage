@@ -1,45 +1,46 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--surface);
-    padding: calc(13 / 16 * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface);
+  padding: calc(13 / 16 * 1rem) var(--section-1-pr) 0 var(--section-1-pl);
 }
 
 @media (min-width: 576px) {
-    .header {
-        padding: calc(42 / 16 * 1rem) var(--section-1-pr) calc(7 / 16 * 1rem) var(--section-1-pl);
-    }
+  .header {
+    padding: calc(42 / 16 * 1rem) var(--section-1-pr) calc(7 / 16 * 1rem)
+      var(--section-1-pl);
+  }
 }
 
 .header__btn-menu {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width: 576px) {
-    .header__btn-menu {
-        display: none;
-    }
+  .header__btn-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .header__menu {
-        /* TODO: Change to fill remaining part of screen with respect to hiding / showing url bar */
-        /*noinspection CssUnresolvedCustomProperty*/
-        height: calc(100vh - var(--main-menu-offset-top));
-        background-color: var(--surface);
-        transform-origin: top right;
-        left: 0;
-        right: 0;
-        top: 100%;
-    }
+  .header__menu {
+    /* TODO: Change to fill remaining part of screen with respect to hiding / showing url bar */
+    /*noinspection CssUnresolvedCustomProperty*/
+    height: calc(100vh - var(--main-menu-offset-top));
+    background-color: var(--surface);
+    transform-origin: top right;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
 }
 
 @media (min-width: 576px) {
-    .header__menu {
-        /* Compensate styles of .dropdown. */
-        /* Ideally, we should specify when to apply .dropdown here. */
-        all: unset !important;
-        flex: 0 0 auto;
-    }
+  .header__menu {
+    /* Compensate styles of .dropdown. */
+    /* Ideally, we should specify when to apply .dropdown here. */
+    all: unset !important;
+    flex: 0 0 auto;
+  }
 }

@@ -32,9 +32,9 @@
   /*noinspection CssInvalidFunction*/
   --blue-500-50a: color(#2d9cdb a(50%));
 
-  --red-500: #EB5757;
-  --red-600: #E73636;
-  --red-700: #DB1A1A;
+  --red-500: #eb5757;
+  --red-600: #e73636;
+  --red-700: #db1a1a;
 
   /* Font families */
   --font-sans-serif: Poppins;

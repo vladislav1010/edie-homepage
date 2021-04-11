@@ -1,65 +1,66 @@
 .input {
-    width: 100%;
-    min-width: 0;
-    outline: 0;
-    position: relative;
-    appearance: none;
-    transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
-    vertical-align: middle;
+  width: 100%;
+  min-width: 0;
+  outline: 0;
+  position: relative;
+  appearance: none;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out,
+    background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  vertical-align: middle;
 
-    padding: var(--input-padding-y) var(--input-padding-x);
+  padding: var(--input-padding-y) var(--input-padding-x);
 
-    --input-focus-border-color: var(--blue-500);
-    --input-error-border-color: var(--invalid-500);
+  --input-focus-border-color: var(--blue-500);
+  --input-error-border-color: var(--invalid-500);
 }
 
 .input_md {
-    --input-padding-x: calc(19 / 16 * 1rem);
-    --input-padding-y: calc(13 / 16 * 1rem);
-    border-radius: calc(12 / 16 * 1rem);
-    font-size: var(--text-sm);
-    line-height: 1.5;
+  --input-padding-x: calc(19 / 16 * 1rem);
+  --input-padding-y: calc(13 / 16 * 1rem);
+  border-radius: calc(12 / 16 * 1rem);
+  font-size: var(--text-sm);
+  line-height: 1.5;
 }
 
 @media (min-width: 576px) {
-    .input_md {
-        --input-padding-x: calc(21 / 16 * 1rem);
-        --input-padding-y: calc(15 / 16 * 1rem);
-        font-size: var(--text-lg);
-    }
+  .input_md {
+    --input-padding-x: calc(21 / 16 * 1rem);
+    --input-padding-y: calc(15 / 16 * 1rem);
+    font-size: var(--text-lg);
+  }
 }
 
 .input_dominant {
-    --input-bg: var(--dominant-6);
-    --input-hover-bg: var(--dominant-6);
+  --input-bg: var(--dominant-6);
+  --input-hover-bg: var(--dominant-6);
 }
 
 .input_filled {
-    border-width: var(--border-2);
-    border-color: var(--input-bg);
-    background-color: var(--input-bg);
+  border-width: var(--border-2);
+  border-color: var(--input-bg);
+  background-color: var(--input-bg);
 }
 
 .input_filled:hover {
-    border-color: var(--input-hover-bg);
-    background-color: var(--input-hover-bg);
+  border-color: var(--input-hover-bg);
+  background-color: var(--input-hover-bg);
 }
 
 .input_filled:read-only {
-    box-shadow: none !important;
-    user-select: all;
+  box-shadow: none !important;
+  user-select: all;
 }
 
 .input_filled:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .input_filled:invalid {
-    border-color: var(--input-error-border-color);
+  border-color: var(--input-error-border-color);
 }
 
 .input_filled:focus {
-    background-color: transparent;
-    border-color: var(--input-focus-border-color);
+  background-color: transparent;
+  border-color: var(--input-focus-border-color);
 }

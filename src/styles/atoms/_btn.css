@@ -5,7 +5,8 @@
   font-weight: var(--font-weight-medium);
   /* We specify exact properties instead of `all`, because with all we can inadvertently enable undesired transition,
   which can be very easy left unnoticed */
-  transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out,
+    background-color 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 
 .btn:disabled {

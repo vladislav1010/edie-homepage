@@ -1,55 +1,55 @@
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu__item {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 
-    --link-px: 7px;
+  --link-px: 7px;
 }
 
 .menu__link {
-    padding: var(--link-px);
+  padding: var(--link-px);
 
-    font-size: var(--text-lg);
-    /* By being explicit, we get a bit more maintainable code */
-    line-height: var(--leading-normal);
-    font-weight: var(--font-weight-medium);
-    /* Inherit from body */
-    /* font-family: var(--font-sans-serif);*/
+  font-size: var(--text-lg);
+  /* By being explicit, we get a bit more maintainable code */
+  line-height: var(--leading-normal);
+  font-weight: var(--font-weight-medium);
+  /* Inherit from body */
+  /* font-family: var(--font-sans-serif);*/
 
-    display: flex;
+  display: flex;
 }
 
 .menu__link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 575.98px) {
-    .menu {
-        flex-direction: column;
+  .menu {
+    flex-direction: column;
 
-        margin-left: var(--section-1-pl);
-        margin-right: var(--section-1-pr);
-    }
+    margin-left: var(--section-1-pl);
+    margin-right: var(--section-1-pr);
+  }
 
-    .menu__item {
-        margin-left: calc(0px - var(--link-px));
-        margin-right: calc(0px - var(--link-px));
-    }
+  .menu__item {
+    margin-left: calc(0px - var(--link-px));
+    margin-right: calc(0px - var(--link-px));
+  }
 }
 
 @media (min-width: 576px) {
-    .menu {
-        align-items: center;
-        justify-content: flex-end;
-    }
+  .menu {
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-    .menu__item:not(:last-child) {
-        margin-right: 36px;
-    }
+  .menu__item:not(:last-child) {
+    margin-right: 36px;
+  }
 
-    .menu__link {
-        font-size: var(--text-xl);
-    }
+  .menu__link {
+    font-size: var(--text-xl);
+  }
 }
