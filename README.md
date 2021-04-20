@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/649e4bef-2e48-402e-adf6-6479dff05c05/deploy-status)](https://app.netlify.com/sites/lucid-pasteur-ee2eec/deploys)
+
 <h1 align="center">Edie homepage</h1>
 
 <div align="center">
